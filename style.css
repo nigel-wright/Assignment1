@@ -1,0 +1,289 @@
+body {
+    display: flex;
+    font-family: 'Roboto', monospace;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.hero_section {
+    text-align: center;
+}
+
+img {
+    border: 1px solid #6600cc;
+    height: auto;
+    max-width: 55%;
+}
+
+.all_titles {
+    text-align: center;
+}
+
+.all_titles a {
+    display: inline-block;
+    padding: 20px 45px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #6600cc;
+    border-radius: 43px; 
+}
+
+.all_titles a:hover {
+    background-color: white; 
+    color: black;
+    cursor: pointer;
+}
+
+.about_title, .contact_title, .project_title, .experience_title {
+    text-align: center; 
+    font-weight: bold;
+}
+
+form {
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.about_p {
+    text-align: center;
+    margin: 30px;
+    padding: 2px 100px;
+}
+
+#my_skills {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+span {
+    border-bottom: 2px solid #6600cc;
+    padding: 3px;
+}
+
+button {
+    background-color: black;
+    border: none;
+    margin: -15px;
+    padding: 5px 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 45px;
+}
+
+h4 {
+    margin: -2px;
+}
+
+#enter {
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid #6600cc;
+    border-radius: 5px;
+    background-color: violet;
+    padding: 10px 15px;
+    text-decoration: white;
+}
+
+.about_skill {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.contact_form {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_form input{
+    border: 2px solid #6600cc;
+    font-weight: bold;
+}
+
+.name .email .message {
+    font-size: 15px;
+    width: 250px;
+}
+
+.enter {
+    background-color: white;
+    height: auto;
+    width: 55px;
+    font-size: 13px;
+}
+
+.contact_me_buttons {
+    text-align: center;
+    margin: 5px;
+}
+
+.contact_me_buttons button {
+    font-size: 15px;
+    margin: 6px;
+    padding: 10px 20px;
+    border: 2px solid #6600cc;
+    border-radius: 5px;
+    background-color: violet;
+}
+
+.contact_me_buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    text-align: right;
+    margin: 2px;
+    padding:10px;
+}
+
+nav a {
+    margin: 15px;
+    border-bottom: 2px solid #6600cc;
+    color: white;
+}
+
+nav a:hover {
+    color: violet; 
+}
+
+.project_display ul {
+    text-align: center;
+    font-size: 13px;
+    margin: 10px;
+    padding: 5px 5px;
+    
+}
+
+.project_display img {
+    height: auto;
+    width: 350;
+    border-radius: 5px;
+}
+
+.project1 {
+    text-align: center;
+    margin-bottom: 200px;
+    margin-right: 100px; 
+    margin-top:35px;
+}
+
+.project1 p {
+    margin: 10px;
+    font-size: 18px;
+    padding: 15px 155px;
+ 
+}
+
+.project2 {
+    text-align: center;
+    margin-right: 100px; 
+    margin-top:35px;
+}
+.project2 p {
+    font-size: 18px;
+    margin: 5px;
+    padding: 15px 155px
+}
+
+.project2 span{
+    text-align: right;
+}
+
+.project1, .project2 span {
+    font-size: 40px;
+    text-align: center;
+}
+
+.job_description li {
+    list-style: none;
+    display: inline-block;
+    border: none;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.job_skills {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experience1, .experience2, .experience3 {
+    margin-left: 15px;
+}
+
+.typewriter {
+    font-size: 34px;
+    font-weight: 900;
+    min-width: 280px;
+}
+
+.typewriter span{
+    border: none;
+    position: relative;
+}
+
+.typewriter span::before {
+    content: "Nigel Wright";
+    color: white;
+    font: 60px 'Roboto', monospace bold;
+    animation: words 90s infinite delay(3s);
+}
+
+.typewriter span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 12px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    right: -10px;
+    animation: cursor .6s infinite, typing 20s steps(11) infinite ; 
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid black
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Nigel Wright";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 90%, 95% {
+        width: 0; 
+    } 
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 10;
+    margin-top: 175px ;
+    margin-bottom: 35px;
+}
+  
